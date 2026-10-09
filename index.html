@@ -3,51 +3,67 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>ROJA - Hamburgueseria</title>
-<meta name="description" content="Demo web: la hamburguesa se desarma y entra en la caja." />
+<title>ROJA - Hamburgueseria artesanal</title>
+<meta name="description" content="Hamburgueseria artesanal. Demo web con animacion al hacer scroll." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-<div class="glow"></div>
+<header class="nav">
+  <span class="brand">ROJA</span>
+  <nav><a href="#">Menu</a><a href="#">Locales</a><a class="pill" href="#">Pedir</a></nav>
+</header>
+
 <div class="stage" id="stage">
+  <div class="halo"></div>
   <img class="layer" id="l-base" src="img/base.webp" alt="Hamburguesa" />
   <img class="layer" id="l-box" src="img/box.webp" alt="" />
   <img class="layer" id="l-fries" src="img/fries.webp" alt="" />
   <img class="layer" id="l-soda" src="img/soda.webp" alt="" />
-  <img class="layer" id="l-bunbottom" src="img/bunbottom.webp" alt="" />
-  <img class="layer" id="l-patty" src="img/patty.webp" alt="" />
+  <img class="layer" id="l-topbun" src="img/topbun.webp" alt="" />
+  <img class="layer" id="l-lettuce" src="img/lettuce.webp" alt="" />
+  <img class="layer" id="l-tomato" src="img/tomato.webp" alt="" />
   <img class="layer" id="l-cheese" src="img/cheese.webp" alt="" />
   <img class="layer" id="l-bacon" src="img/bacon.webp" alt="" />
-  <img class="layer" id="l-tomato" src="img/tomato.webp" alt="" />
-  <img class="layer" id="l-lettuce" src="img/lettuce.webp" alt="" />
-  <img class="layer" id="l-topbun" src="img/topbun.webp" alt="" />
+  <img class="layer" id="l-patty" src="img/patty.webp" alt="" />
+  <img class="layer" id="l-bunbottom" src="img/bunbottom.webp" alt="" />
+  <div class="tags" id="tags"></div>
 </div>
+
 <main class="content">
   <section class="slide hero">
-    <p class="eyebrow">Demo web interactivo</p>
-    <h1>ROJA<small>hamburgueseria</small></h1>
-    <p class="lead">Baja y mira como se desarma.</p>
-    <div class="hint">&#8595;</div>
+    <p class="eyebrow">Hamburgueseria artesanal</p>
+    <h1>ROJA</h1>
+    <p class="lead">Pan brioche, carne madurada y cheddar fundido.<br />Baja y mira como se desarma.</p>
+    <span class="scrollcue">Desliza</span>
   </section>
   <section class="slide">
-    <h2>Ingredientes de verdad</h2>
-    <p>Pan, carne, cheddar, panceta, tomate y lechuga. Cada capa, en su lugar.</p>
+    <p class="kicker">01 - Origen</p>
+    <h2>Ingredientes<br />de verdad</h2>
+    <p class="body">Elegimos cada pieza. Pan horneado cada manana, carne de campo y vegetales del dia.</p>
   </section>
   <section class="slide right">
-    <h2>Todo entra en la caja</h2>
-    <p>Se arma y cae adentro. Viaja perfecta.</p>
+    <p class="kicker">02 - El armado</p>
+    <h2>Todo entra<br />en la caja</h2>
+    <p class="body">Se arma al momento y viaja perfecta. Sin sorpresas.</p>
   </section>
   <section class="slide">
-    <h2>El combo</h2>
-    <p>Papas y gaseosa, listos para salir.</p>
+    <p class="kicker">03 - El combo</p>
+    <h2>Papas y<br />gaseosa</h2>
+    <p class="body">El completo, listo para salir. Bien frio y bien crocante.</p>
   </section>
   <section class="slide end">
-    <h2>Lo hacemos para tu local?</h2>
-    <p>Esta pagina es un demo. Se personaliza con tu marca, tu menu y tus precios.</p>
+    <p class="kicker">Tu marca aca</p>
+    <h2>Esto puede ser<br />tu negocio</h2>
+    <p class="body">Es un demo real. Se personaliza con tu nombre, tu menu, tus fotos y tus precios.</p>
     <a class="cta" href="#">Pedila ahora</a>
   </section>
+  <footer class="foot">Demo web - hecho para mostrar. ROJA 2026.</footer>
 </main>
-<div class="progress"><span></span></div>
+
+<div class="bar"><span></span></div>
 <script src="app.js"></script>
 </body>
 </html>
