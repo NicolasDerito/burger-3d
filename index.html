@@ -3,46 +3,50 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<title>ROJA - Hamburgueseria 3D</title>
+<title>ROJA - Hamburgueseria</title>
+<meta name="description" content="Demo web: la hamburguesa se desarma y entra en la caja." />
 <link rel="stylesheet" href="styles.css" />
-<script type="importmap">
-{
-  "imports": {
-    "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
-  }
-}
-</script>
 </head>
 <body>
-<canvas id="scene"></canvas>
-<div class="grain"></div>
+<div class="glow"></div>
+<div class="stage" id="stage">
+  <img class="layer" id="l-box" src="img/box.webp" alt="" />
+  <img class="layer" id="l-bunbottom" src="img/bunbottom.webp" alt="" />
+  <img class="layer" id="l-patty" src="img/patty.webp" alt="" />
+  <img class="layer" id="l-cheese" src="img/cheese.webp" alt="" />
+  <img class="layer" id="l-bacon" src="img/bacon.webp" alt="" />
+  <img class="layer" id="l-tomato" src="img/tomato.webp" alt="" />
+  <img class="layer" id="l-lettuce" src="img/lettuce.webp" alt="" />
+  <img class="layer" id="l-topbun" src="img/topbun.webp" alt="" />
+  <img class="layer" id="l-fries" src="img/fries.webp" alt="" />
+  <img class="layer" id="l-soda" src="img/soda.webp" alt="" />
+</div>
 <main class="content">
   <section class="slide hero">
-    <p class="eyebrow">Demo 3D interactivo</p>
+    <p class="eyebrow">Demo web interactivo</p>
     <h1>ROJA<small>hamburgueseria</small></h1>
     <p class="lead">Baja y mira como se desarma.</p>
     <div class="hint">&#8595;</div>
   </section>
   <section class="slide">
-    <h2>Ingredientes reales</h2>
+    <h2>Ingredientes de verdad</h2>
     <p>Pan, carne, cheddar, panceta, tomate y lechuga. Cada capa, en su lugar.</p>
   </section>
-  <section class="slide">
+  <section class="slide right">
     <h2>Todo entra en la caja</h2>
     <p>Se arma y cae adentro. Viaja perfecta.</p>
   </section>
   <section class="slide">
-    <h2>Papas + gaseosa</h2>
-    <p>El combo completo, listo para salir.</p>
+    <h2>El combo</h2>
+    <p>Papas y gaseosa, listos para salir.</p>
   </section>
   <section class="slide end">
-    <h2>Damos el proximo paso?</h2>
-    <p>Esta pagina es un demo hecho para tu negocio.</p>
+    <h2>Lo hacemos para tu local?</h2>
+    <p>Esta pagina es un demo. Se personaliza con tu marca, tu menu y tus precios.</p>
     <a class="cta" href="#">Pedila ahora</a>
   </section>
 </main>
 <div class="progress"><span></span></div>
-<div id="fallback" hidden>Tu navegador no soporta WebGL, pero podes ver el menu igual.</div>
-<script type="module" src="app.mjs"></script>
+<script src="app.js"></script>
 </body>
 </html>
